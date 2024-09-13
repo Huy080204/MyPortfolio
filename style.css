@@ -155,7 +155,8 @@ a {
 /* Project section */
 #projects {
   text-align: center;
-  padding: 10rem 20rem;
+  margin: 0 auto;
+  padding: 10rem 5rem;
   background-color: var(--main-blue);
 }
 
@@ -183,7 +184,7 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   transition: border 0.2s ease-out;
@@ -193,9 +194,17 @@ a {
   border: 3px solid #be3144;
 }
 
+.project-image-wrap {
+  height: calc(100% - 40px);
+  max-height: 400px;
+  max-width: 400px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
 .project-image {
   width: 100%;
-  max-width: 400px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -347,5 +356,6 @@ footer i {
   footer {
     flex-direction: column;
     text-align: center;
+    padding: 2rem 1rem;
   }
 }
