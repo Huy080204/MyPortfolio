@@ -3,6 +3,7 @@
   --main-red: #be3144;
   --main-blue: #45567d;
   --main-gray: #303841;
+  --main-light-gray: #414850;
   --main-black: #181719;
 }
 
@@ -46,9 +47,12 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem; /* 18px */
-  font-weight: 400;
-  line-height: 1.4;
+  font-weight: 500;
+  line-height: 1.5;
   color: var(--main-white);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 h1,
@@ -108,7 +112,7 @@ a {
   width: 0;
   height: 4px;
   background-color: var(--main-white);
-  transition: width 0.7s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 
 .nav-link:hover::after {
@@ -179,7 +183,6 @@ a {
 .project {
   background-color: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border: 0px solid var(--main-gray);
   border-radius: 8px;
   padding: 20px;
   display: flex;
@@ -187,11 +190,11 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  transition: border 0.2s ease-out;
+  transition: background-color 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .project:hover {
-  border: 3px solid #be3144;
+  background-color: var(--main-light-gray);
 }
 
 .project-image-wrap {
@@ -220,7 +223,7 @@ a {
   max-width: calc(100% - 20px);
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
