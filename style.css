@@ -202,12 +202,13 @@ a {
 }
 
 .project-image-wrap {
-    height: calc(100% - 40px);
     max-height: 400px;
     max-width: 400px;
     display: flex;
     justify-items: center;
     align-items: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
 }
 
 .project-image {
@@ -227,7 +228,6 @@ a {
     max-width: calc(100% - 20px);
     font-size: 2rem;
     font-weight: bold;
-    margin-top: auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -328,6 +328,43 @@ a {
 
 .btn-contact-detail:hover {
     transform: translateY(8px);
+}
+
+/* Tab to top */
+a.back-to-top {
+    width: 38px;
+    height: 38px;
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #fff;
+    color: var(--main-red);
+    border: 1px solid var(--main-red);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+}
+a.back-to-top i {
+    font-size: 20px;
+}
+a.back-to-top:hover {
+    transition: all 0.3s ease-in-out;
+}
+a.back-to-top .back-to-top-wrap svg {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+}
+a.back-to-top .back-to-top-wrap svg path {
+    fill: transparent;
+    stroke: var(--main-red);
+    stroke-width: 5px;
 }
 
 /* Footer */
