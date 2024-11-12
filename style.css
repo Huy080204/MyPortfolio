@@ -133,7 +133,13 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
+}
+
+#info-content-name {
+	font-family: "Protest Riot", "Poppins";
+	font-weight: 500;
+	font-size: 100px;
 }
 
 .image-content img {
